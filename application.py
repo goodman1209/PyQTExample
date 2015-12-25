@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import sys
 import ui.homepage.uihomeentry as uihome
+import example
 #from  ui.homepage.uihomeentry import str
 #print(str)
 print(uihome.str)
@@ -13,7 +14,8 @@ if __name__ == '__main__':
     from PyQt5.QtWidgets import QApplication
  
     app = QApplication(sys.argv)
-    addressBook = uihome.Application()
+    #addressBook = uihome.Application()
+    addressBook = example.ExampleApp()
     addressBook.show()
 
     sys.exit(app.exec_())
