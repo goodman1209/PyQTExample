@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>805</width>
+    <height>603</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -44,7 +44,7 @@
     <property name="geometry">
      <rect>
       <x>510</x>
-      <y>20</y>
+      <y>10</y>
       <width>256</width>
       <height>321</height>
      </rect>
@@ -63,6 +63,10 @@
      <string>TextLabel</string>
     </property>
    </widget>
+   <zorder>listView</zorder>
+   <zorder>tableWidget</zorder>
+   <zorder>label</zorder>
+   <zorder>pushButton</zorder>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <widget class="QMenuBar" name="menuBar">
@@ -70,7 +74,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>805</width>
      <height>22</height>
     </rect>
    </property>

@@ -7,6 +7,7 @@
 # WARNING! All changes made in this file will be lost!
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import ui.homepage.displayAuthor as uihome
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -17,6 +18,8 @@ class Ui_MainWindow(object):
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(590, 490, 75, 23))
         self.pushButton.setObjectName("pushButton")
+        self.pushButton.clicked.connect(self.printAuthorName)
+        
         self.listView = QtWidgets.QListView(self.centralwidget)
         self.listView.setGeometry(QtCore.QRect(20, 10, 421, 321))
         self.listView.setStyleSheet("font: 75 italic 9pt \"Agency FB\";")
@@ -56,5 +59,12 @@ class Ui_MainWindow(object):
         self.label.setText(_translate("MainWindow", "TextLabel"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.actionSave.setText(_translate("MainWindow", "Save"))
-
+    
+    def printAuthorName(self):
+        print("Allan Sung")
+        dialog = QtWidgets.QDialog()
+        dialog.ui = uihome.Ui_Dialog()
+        dialog.ui.setupUi(dialog)
+        dialog.exec_()
+        dialog.show()
 
