@@ -66,5 +66,4 @@ class Ui_MainWindow(object):
         dialog.ui = uihome.Ui_Dialog()
         dialog.ui.setupUi(dialog)
         dialog.exec_()
-        dialog.show()
 

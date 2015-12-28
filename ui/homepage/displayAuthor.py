@@ -32,7 +32,8 @@ class Ui_Dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
         # connect the two functions
-        self.pushButton.clicked.connect(self.return_cancel)
+        #self.pushButton.clicked.connect(self.return_cancel)
+        self.pushButton.clicked.connect(lambda: self.return_cancel(Dialog))
         self.pushButton_2.clicked.connect(self.return_accept)
 
     def retranslateUi(self, Dialog):
@@ -46,5 +47,6 @@ class Ui_Dialog(object):
     def return_accept(self):
         print("yes")
 
-    def return_cancel(self):
+    def return_cancel(self, dialog):
         print("no")
+        dialog.close()
