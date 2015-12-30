@@ -22,7 +22,7 @@ class Ui_MainWindow(object):
         
         self.listView = QtWidgets.QListView(self.centralwidget)
         self.listView.setGeometry(QtCore.QRect(20, 10, 421, 321))
-        self.listView.setStyleSheet("font: 75 italic 9pt \"Agency FB\";")
+        self.listView.setStyleSheet("font: 75 italic 14pt \"Agency FB\";")
         self.listView.setObjectName("listView")
         # Create an empty model for the list's data
         self.model = QtGui.QStandardItemModel(self.listView)
